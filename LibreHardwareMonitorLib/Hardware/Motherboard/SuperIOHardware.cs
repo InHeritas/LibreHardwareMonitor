@@ -2024,6 +2024,7 @@ internal sealed class SuperIOHardware : Hardware
                     case Model.B550_UD_AC:
                     case Model.B550M_AORUS_PRO:
                     case Model.B550M_AORUS_PRO_AX:
+                    case Model.X870_GAMING_WIFI6:
                     case Model.X870E_AORUS_PRO: // ITE IT8696E
                     case Model.X870E_AORUS_PRO_ICE: // ITE IT8696E
                         v.Add(new Voltage("Vcore", 0, 0, 1));
@@ -2412,6 +2413,7 @@ internal sealed class SuperIOHardware : Hardware
                         c.Add(new Control("System Fan #4", 2));
                         break;
 
+                    case Model.X870_GAMING_WIFI6:
                     case Model.X870E_AORUS_PRO:
                     case Model.X870E_AORUS_PRO_ICE: // ITE IT87952E
                         v.Add(new Voltage("VIN0", 0));
